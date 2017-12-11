@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+        <Property name="logging.root.level">${sys:logging.root.level:-INFO}</Property>
+	</Properties>
+
+	<Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p %t ConvoId=%X{correlationId} [%c{1.}] %m%n" />
+        </Console>
+	</Appenders>
+	<Loggers>
+        <Root level="${logging.root.level}">
+            <AppenderRef ref="CONSOLE" />
+        </Root>
+	</Loggers>
+</Configuration>
