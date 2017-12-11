@@ -1,6 +1,6 @@
 # throttle-demo
 
-Example of a REST service that acts as a throttle mechanism for executing a given task. This task could be communicating with an external system or any other thing. For our testing purposes, it is a simple **Command** class which randomly generates a delay between 2 and 5 seconds to simulate latency on the given task. (For a more extensive explanation in Spanish, please visit http://www.tecnohobby.net/ppal/index.php/programacion/java)
+Example of a REST service that acts as a throttle mechanism for executing a given task. This task could be communicating with an external system or any other thing. For our testing purposes, it is a simple **Command** class which randomly generates a delay between 2 and 5 seconds to simulate latency on the given task. (For a more extensive explanation in Spanish, please visit http://www.tecnohobby.net/ppal/index.php/programacion/java/38-control-de-trafico-en-java-rate-limit-throttling-mechanism)
 
 The service shows three mechanisms for performing the throttling and provides one endpoint to test each of them:
 
